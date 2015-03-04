@@ -23,11 +23,14 @@ Plugin 'tpope/vim-vividchalk'
 Plugin 'tomasr/molokai'
 """"""""""""""""""""""""""
 
-
+" from http://vimawesome.com/plugin/tagbar
+Plugin 'majutsushi/tagbar'
 " from http://vimawesome.com/plugin/easymotion 
 Plugin 'Lokaltog/vim-easymotion'
 " from http://vimawesome.com/plugin/syntastic
 Plugin 'scrooloose/syntastic'
+" from http://vimawesome.com/plugin/the-nerd-tree
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,3 +65,11 @@ au FileType py set autoindent
 au FileType py set smartindent
 au FileType py set textwidth=79 " PEP-8 Friendly
 """""""""""""""""""""""""
+
+"""""""" TAGBAR """""""
+nmap <C-t> :TagbarToggle<CR>
+"""""""""""""""""""""""
+
+"""""""" NERDTree """""""
+nmap <C-n> :NERDTreeToggle<CR>
+"""""""""""""""""""""""
