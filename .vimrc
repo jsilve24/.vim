@@ -65,6 +65,15 @@ au FileType py set autoindent
 au FileType py set smartindent
 au FileType py set textwidth=79 " PEP-8 Friendly
 """""""""""""""""""""""""
+""""""" JAVA """""""""""
+au FileType java set smartindent
+au FileType java set autoindent
+""""""""""""""""""""""""
+
+""""""" SLURM """""""""""
+au FileType slurm set smartindent
+au FileType slurm set autoindent
+""""""""""""""""""""""""
 
 """""""" TAGBAR """""""
 nmap <C-t> :TagbarToggle<CR>
