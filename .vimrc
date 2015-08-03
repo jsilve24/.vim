@@ -32,6 +32,9 @@ Plugin 'scrooloose/syntastic'
 " from http://vimawesome.com/plugin/the-nerd-tree
 Plugin 'scrooloose/nerdtree'
 
+" from http://vimawesome.com/plugin/hardmode
+Plugin 'wikitopian/hardmode'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -82,3 +85,8 @@ nmap <C-t> :TagbarToggle<CR>
 """""""" NERDTree """""""
 nmap <C-n> :NERDTreeToggle<CR>
 """""""""""""""""""""""
+
+"""""""" HardMode """""""
+" Turn it on by default
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+""""""""""""""""""""""""
